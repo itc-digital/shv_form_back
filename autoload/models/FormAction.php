@@ -4,14 +4,14 @@ namespace models;
 class FormAction {
     public static function validate($f3, $data)
     {
-        if (mb_strlen($data['fio'])<= 0){return array ('status' => False, 'textError' => "Поле ФИО пустое");}
+        if (mb_strlen($data['fio'])<= 0){return array ('status' => False, 'textError' => "Поле \"ФИО\" пустое");}
         elseif (mb_strlen($data['fakultet'])<= 0){return array ('status' => False, 'textError' => "Поле факультет пустое");}
         elseif (mb_strlen($data['kurs'])<= 0){return array ('status' => False, 'textError' => "Поле курс пустое");}
         elseif (mb_strlen($data['group'])<= 0){return array ('status' => False, 'textError' => "Поле группа пустое");}
         elseif (mb_strlen($data['phone'])<= 0){return array ('status' => False, 'textError' => "Поле телефон пустое");}
         elseif (mb_strlen($data['vkLink'])<= 0){return array ('status' => False, 'textError' => "Поле ссылка VK пустое");}
         elseif (mb_strlen($data['experience'])<= 0){return array ('status' => False, 'textError' => "Поле опыт походов пустое");}
-        elseif (mb_strlen($data['otherExperience]'])<= 0){return array ('status' => False, 'textError' => "Поле друг пустое");}
+        elseif (mb_strlen($data['otherExperience'])<= 0){return array ('status' => False, 'textError' => "Поле \"Другой полезый опыт\" пустое");}
         elseif (mb_strlen($data['inventoryAvailiable'])<= 0){return array ('status' => False, 'textError' => "Поле инвентарь пустое");}
         elseif (mb_strlen($data['fitnessLevel'])<= 0){return array ('status' => False, 'textError' => "Поле уровень физ. подготовки пустое");}
         elseif (mb_strlen($data['diseases'])<= 0){return array ('status' => False, 'textError' => "Поле болезни пустое");}
