@@ -24,11 +24,11 @@ class Form {
             $message .= "<p>Самое дальнее путешествие: $data[yourTrip]</p>";
             \models\FormAction::record($f3, $data);
             \models\Mail::mailTo($email, $subject, $message);
-            \Views\Render::formDoneRender($f3);
+            $f3->status(200);
         } else {
             $f3->set('data', $data);
             $f3->set('textError', $validate[textError]);
-            \Views\Render::formRender($f3);
+            $f3->status(418);
         }
     }
 }
