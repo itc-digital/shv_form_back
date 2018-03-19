@@ -3,7 +3,7 @@ namespace models;
 class Mail {
     public static function mailTo($email, $subject, $message)
     {
-		$subject = "Школа Выживания 2018 :: ITC - $subject";
+        $subject = "$subject - Школа Выживания";
         $message = "<html><body>$message</body></html>"; 	
         
         $header = "From: Школа Выживания 2018 :: ITC <no-reply@the-center.it>\r\n"; 

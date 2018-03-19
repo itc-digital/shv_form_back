@@ -26,8 +26,7 @@ class Form {
             \models\Mail::mailTo($email, $subject, $message);
             $f3->status(200);
         } else {
-            $f3->set('data', $data);
-            $f3->set('textError', $validate[textError]);
+            echo $validate[textError];
             $f3->status(418);
         }
     }
