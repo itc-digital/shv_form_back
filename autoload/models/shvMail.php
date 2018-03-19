@@ -1,6 +1,6 @@
 <?php
 namespace models;
-class Mail {
+class shvMail {
     public static function mailTo($email, $subject, $message)
     {
         $subject = "$subject - Школа Выживания";

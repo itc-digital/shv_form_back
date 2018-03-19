@@ -1,10 +1,10 @@
 <?php
 namespace views;
 
-class Render {
+class shvRender {
     public static function main($f3)
     {
         $template = \Template::instance();
-		echo $template->render("index.html");
+		echo $template->render("shv/index.html");
     }
 }

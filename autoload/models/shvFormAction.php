@@ -1,7 +1,7 @@
 <?php
 namespace models;
 
-class FormAction {
+class shvFormAction {
     public static function validate($f3, $data)
     {
         if (mb_strlen($data['fio'])<= 0){return array ('status' => False, 'textError' => "Поле \"ФИО\" пустое");}

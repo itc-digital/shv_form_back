@@ -1,9 +1,9 @@
 <?php
 namespace controllers;
 
-class Page {
+class shvPage {
     public function mainPage($f3)
     {
-        \views\Render::main($f3);
+        \views\shvRender::main($f3);
     }
   }
