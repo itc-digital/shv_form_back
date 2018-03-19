@@ -7,7 +7,7 @@ class Form {
         $data = $f3->get('POST');
         $validate = \models\FormAction::validate($f3, $data);
         if($validate[status]) {
-            $email = "shkolavizhivaniya2018@gmail.com";
+            $email = $f3->get('email');
             $subject = "$data[fio] - Школа Выживания";
             $message = \models\Mail::createMessage($data);
             \models\FormAction::record($f3, $data);

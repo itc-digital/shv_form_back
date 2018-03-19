@@ -53,6 +53,11 @@ COMMIT;
 ```
 cd path/to/site
 ```
+Создайте файл `config.ini`:
+
+```
+touch config.ini
+```
 
 Затем откройте в редакторе `nano` файл `config.ini`:
 
@@ -68,6 +73,7 @@ nano config.ini
 DEBUG=3
 UI=ui/
 AUTOLOAD=autoload/
+email=
 db_host=
 db_name=
 db_user=
@@ -79,6 +85,8 @@ db_pwd=
 * `db_name` - имя БД
 * `db_user` - учетная запись пользователя БД
 * `bd_pwd` - пароль от учетной записи пользоваьтеля БД
+
+Так же не забудьте прописать e-mail, на который будет отправляться письмо с заявкой.
 
 Чтобы сохранить изменения, нажмите `Ctrl+O`, `Enter`. Чтобы выйти из редактора - `Ctrl+X`.
 
